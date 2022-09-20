@@ -1,0 +1,45 @@
+*{
+    margin:10px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 55px;
+    font-family: sans-serif;
+}
+
+.container{
+    height: 100vh;
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.box{
+    background-color: gainsboro;
+    width:  33%;
+    height: 33vh;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 600px ){
+    .row{
+        flex-direction: column;
+    }
+    .box{
+        width: 100%;
+        background-color: rgb(202, 207, 202);
+        color: rgb(26, 25, 25);
+        border: 2px solid rgb(8, 8, 8);
+    }
+}
